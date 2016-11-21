@@ -3,6 +3,12 @@
   "plugins": [
     "babel"
   ],
+  "rules": {
+    "max-len": ["error", 100, 2, {
+      ignoreUrls: true,
+      ignoreTrailingComments: true,
+    }]
+  },
   "settings": {
     "import/resolver": {
       "node": {
