@@ -1,5 +1,5 @@
 import * as models from 'lib/model';
-import query, { end } from 'lib/query';
+import { end, query } from 'lib/query';
 
 const creationOrder = [
   models.User,
