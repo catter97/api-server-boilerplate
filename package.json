@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Boilerplate for API server.",
   "scripts": {
-    "build": "NODE_ENV=production rm -rf build && babel --compact true --no-comments --minified -d build server.js && babel --compact true --no-comments --minified -d build/lib lib/",
+    "build": "rm -rf build && NODE_ENV=production babel --compact true --no-comments --minified -d build server.js && NODE_ENV=production babel --compact true --no-comments --minified -d build/lib lib/",
     "init": "babel-node script/init",
     "lint": "eslint .",
     "nodemon": "nodemon server --exec babel-node",
@@ -14,6 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-stage-3": "^6.17.0",
     "eslint": "^3.10.2",
     "eslint-config-airbnb": "^13.0.0",
@@ -25,6 +26,7 @@
   },
   "dependencies": {
     "app-module-path": "^2.1.0",
+    "babel-runtime": "^6.18.0",
     "express": "^4.14.0",
     "http-errors": "^1.5.1",
     "morgan": "^1.7.0",
