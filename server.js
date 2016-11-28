@@ -3,9 +3,10 @@ import bodyParser from 'body-parser';
 import express from 'express';
 import session from 'express-session';
 import morgan from 'morgan';
+import passport from 'passport';
 
+import 'lib/auth';
 import api from 'lib/api';
-import { login, passport } from 'lib/auth';
 import config from 'lib/config';
 
 const app = express();
@@ -21,12 +22,6 @@ app.use(session({
 }));
 app.use(passport.initialize());
 app.use(bodyParser.json());
-
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
-
-app.use(login);
 app.use('/api', api);
 
 app.listen(config.port);
