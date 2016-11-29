@@ -1,9 +1,15 @@
 {
+  "env": {
+    "mocha": true
+  },
   "extends": "airbnb",
   "plugins": [
     "babel"
   ],
   "rules": {
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": ["**/test.js", "**/test/*.js"]
+    }],
     "max-len": ["error", 100, 2, {
       ignoreUrls: true,
       ignoreTrailingComments: true,
