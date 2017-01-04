@@ -20,9 +20,11 @@
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.18.0",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-polyfill": "^6.20.0",
-    "babel-preset-stage-3": "^6.17.0",
     "chai": "^3.5.0",
     "eslint": "^3.12.2",
     "eslint-config-airbnb": "^13.0.0",
@@ -37,7 +39,6 @@
   },
   "dependencies": {
     "app-module-path": "^2.1.0",
-    "babel-preset-es2015": "^6.18.0",
     "babel-runtime": "^6.20.0",
     "bcryptjs": "^2.4.0",
     "body-parser": "^1.15.2",

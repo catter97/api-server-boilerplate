@@ -1,4 +1,4 @@
-import { User } from 'lib/user';
+import User from 'lib/user/model';
 import { end, query } from 'lib/query';
 
 const models = [
