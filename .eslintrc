@@ -11,8 +11,9 @@
       "devDependencies": ["**/test.js", "**/test/*.js"]
     }],
     "max-len": ["error", 100, 2, {
-      ignoreUrls: true,
-      ignoreTrailingComments: true,
+      "ignoreStrings": true,
+      "ignoreTrailingComments": true,
+      "ignoreUrls": true
     }]
   },
   "settings": {
