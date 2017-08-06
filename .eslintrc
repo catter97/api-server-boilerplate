@@ -14,7 +14,8 @@
       "ignoreStrings": true,
       "ignoreTrailingComments": true,
       "ignoreUrls": true
-    }]
+    }],
+    "no-return-assign": ["error", "except-parens"]
   },
   "settings": {
     "import/resolver": {

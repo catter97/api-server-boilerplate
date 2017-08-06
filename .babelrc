@@ -1,12 +1,6 @@
 {
   "plugins": [
     "babel-plugin-transform-es2015-modules-commonjs",
-    "transform-async-to-generator",
     ["transform-object-rest-spread", { "useBuiltIns": true }]
-  ],
-  "env": {
-    "production": {
-      "plugins": ["transform-runtime"]
-    }
-  }
+  ]
 }

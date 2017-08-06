@@ -1,3 +1,5 @@
+/* eslint-disable no-await-in-loop */
+
 import User from 'lib/user/model';
 import { end, query } from 'lib/query';
 
